@@ -11,10 +11,17 @@ body{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+.profile-text{
+    font-size: 18px;
+    color: #dcdfe0;
+    font-weight: 600;
+}
+
 .white-filter{
    filter: invert(98%) sepia(7%) saturate(123%) hue-rotate(162deg) brightness(88%) contrast(99%);
    width: 48px;
 }
+
 .icons{
     display: flex;
     flex-direction: row;
@@ -40,11 +47,12 @@ body{
 
 .header{
     width: 100%;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     display: grid;
     grid-template-columns: 1fr 3fr 1fr 1fr 1fr;
     grid-template-rows: repeat(2, 1fr);
     grid-column: 2 / 5;
+    background-color: #475569;
 }
 
 .header > div{
@@ -132,8 +140,9 @@ div.search-bar{
 
 input[type="text"]{
     outline: none;
-    border: 1px solid grey;
+    border: 1px solid #cbd5e1;
+    background-color: #cbd5e1;
     padding: 0.5rem;
-    width: 400px;
+    width: 100%;
     border-radius: 50px;
 }
